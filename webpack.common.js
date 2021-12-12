@@ -27,10 +27,10 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(svg|png|jpg|gif|webp)$/,
+        test: /\.(svg|png|jpg|gif|webp|ico)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name].[hash].[ext][query]',
+          filename: 'assets/[name].[hash].[ext][query]',
         },
       },
     ],
